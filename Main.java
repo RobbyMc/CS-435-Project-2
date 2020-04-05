@@ -23,10 +23,19 @@ public class Main extends Graph{
         
    }
    
-   public Graph createRandomUnweightedGraphIter(int n){
+   public Graph createRandomUnweightedGraphIter(final int n){
      list = new ArrayList<Node>[n];
-   
+     //Initialize all Arraylists
+     for (int i = 0; i < n; i++) {
+
+      list[i]= new ArrayList<Integer>();
+     }
    }
+  public DirectedGraph createRandomDAGIter(final int n){
+     list = new ArrayList<Node>[n];
+    
+    
+  }
     
    static void printGraph( Graph graph){
      for( int i = 0; i < graph.n; n++){
@@ -49,6 +58,7 @@ public class Main extends Graph{
        graph.list[src].addFirst(src);
        graph.list[dest].addFirst(src);
        }
+  
        
      public static void main(String[]args){
        int n = 5;
