@@ -37,7 +37,7 @@ public class TopSort extends DirectedGraph{
   public static ArrayList<Node> mDFS(final DirectedGraph graph){ 
      ArrayList<Node> firstnode = new ArrayList<Node>();
      firstnode.add(graph);
-     while(!node!.isEmpty())
+     while(!firstnode.isEmpty())
      {
       Node element = firstnode.pop();
       if(!element.visited)
