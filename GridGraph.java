@@ -6,12 +6,9 @@ import java.util.LinkedList;
 public class GridGraph {
 
  class Node{
-
-  Node current;
-  string item;
-  
-
-  }
+   Node current;
+   string item;
+   }
 
 public void addGridNode(final int x, final int y, final String nodeVal){
   Node head = new Node(int data);
@@ -38,16 +35,14 @@ public void addGridNode(final int x, final int y, final String nodeVal){
              }
              current = current.next;
              }
-
-   
-   }
+         }
  public void removeUndirectedEdge(final GridNode first, final GridNode second){
    return removeUndirectedEdge(new Node(first,last));
    }
 
   class Main{
-     
-    GridGraph createRandomGridGraph(int n)
+     GridGraph createRandomGridGraph(int n){
+      
     
     }
  }
