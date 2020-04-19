@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class TopSort extends DirectedGraph{
  
  class Node{
-  private int id;
+  private int index;
   private ArrayList<Integer> neighbors;
-  public Node(int id){
-   this.id = id;
+  public Node(int index){
+   this.index = index;
    this.neighbors = new ArrayList<>();
    }
    
@@ -23,26 +23,26 @@ public class TopSort extends DirectedGraph{
   public ArrayList<Node> getNodes(){
     return nodes;
    }
-  public int getId(){
-   return id;
+  public int getIndex(){
+   return index;
   }
   public static ArrayList<Node> Kahns(final DirectedGraph graph){
-    ArrayList<Node> L = new ArrayList<>();
+    ArrayList<Node> adjacentList = new ArrayList<>();
     boolean visited[] = new boolean[v];
     for(Node temp : graph.getNodes())){
-      visited.put(temp.getId(),false);
+      visited.put(temp.getIndex(),false);
       }
      }
      
   public static ArrayList<Node> mDFS(final DirectedGraph graph){ 
-     ArrayList<Node> nd = new ArrayList<Node>();
-     nd.add(graph);
-     while(!nd!.isEmpty())
+     ArrayList<Node> firstnode = new ArrayList<Node>();
+     firstnode.add(graph);
+     while(!node!.isEmpty())
      {
-      Node element = nd.pop();
+      Node element = firstnode.pop();
       if(!element.visited)
       {
-       System.out.println(element.id + "  ");
+       System.out.println(element.index + "  ");
        element.visited = true;
       }
       ArrayList<Node> neighbors = element.getNeighbors();
