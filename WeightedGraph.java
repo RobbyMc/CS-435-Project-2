@@ -20,13 +20,13 @@ public class WeightedGraph {
     Vector<Integer>[] adj;
     static int level;
     public Graph(int vector){
-     this.vector = vector;
-     this.adj = new Vector[2* vector];
+      this.vector = vector;
+      this.adj = new Vector[2* vector];
      for(int i = 0; i < 2 * vector;i++){
       this.adj[i] = new Vector<>();
       }
      }
-     }
+   }
     
    Node current;
  public void addNode(final String nodeVal){
@@ -79,11 +79,8 @@ public class WeightedGraph {
         }
      }
     public static void main(String [] args){
-    
-    
      WeightedGraph graph = new WeigthedGraph(n);
      int n = 6;
-     
      graph.addWeightedEdge(0,1,4);
      graph.addWeightedEdge(0,2,3);
      graph.addWeightedEdge(1,3,2);
