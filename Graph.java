@@ -16,6 +16,8 @@ public class Graph {
 
  Node current;
  private Node vertices;
+ private Node vertex1;
+ private Node vertex2;
   
   public void addNode(final String nodeVal){
         
@@ -40,10 +42,10 @@ public class Graph {
        
        while(vertices != null){
           if(first.equals(vertices.item)){
-             v1 = vertices;
+             v1 = firstvertex;
            }
            if(second.equals(vertices.item)){
-             v2 = vertices;
+             v2 = vertex2;
              }
              vertices = vertices.next;
              }
